@@ -1,3 +1,5 @@
-angular.module("app").controller("MainCtrl", function($scope){
-	$scope.msg="hello";
+angular.module("app").controller("MainCtrl", function($scope, tracksFactory){
+	
+	$scope.tracks= tracksFactory.getTracks();
+
 })
