@@ -1,5 +1,5 @@
 angular.module("app").factory("tracksFactory", function($http, $q){
-	
+	// promesse sur l'api souncloud sur le compte de lolivier pour récupere les chansons
 	function getTracks(){
 		var deferred = $q.defer();
 		
@@ -15,7 +15,6 @@ angular.module("app").factory("tracksFactory", function($http, $q){
 
 		return deferred.promise;
 	}
-
 	return {
 		getTracks : getTracks
 	}
