@@ -10,6 +10,8 @@
 	<script src="services/tracksFactory.js"></script>
 </head>
 <body ng-controller="MainCtrl">
-	
+	<form ng-submit="getUser(userName)">
+		<input ng-model="userName" placeholder="nom de l'utilisateur souncloud" />
+	</form>
 </body>
 </html>
