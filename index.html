@@ -8,11 +8,17 @@
 	<script src="app.js"></script>
 	<script src="controllers/mainController.js"></script>
 	<script src="services/tracksFactory.js"></script>
+	<script src="directives/song.js"></script>
 </head>
 <body ng-controller="MainCtrl">
 	<form>
 		<input ng-model="userName" placeholder="nom de l'utilisateur souncloud" />
 		<button type="submit" ng-click="getUser(userName)">Envoyer</button>
 	</form>
+	
+	<div ng-repeat="song in userData">
+		<song>
+	</div>
+	
 </body>
 </html>
